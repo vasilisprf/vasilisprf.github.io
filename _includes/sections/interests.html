@@ -1,0 +1,44 @@
+<div class="container" id="i18_interests">
+    <div class="row m-b-lg">
+        <div class="col-lg-12 text-center">
+            <div class="navy-line"></div>
+            <h1><span data-i18n="interests.my_interests">Interests</span></h1>
+        </div>
+    </div>
+    <div class="row">
+        {% for interests in site.data.index.interests %}
+            {% assign loopindex = forloop.index | modulo: 2 %}
+            {% if forloop.last %}
+                {% if forloop.last == forloop.first %}
+            <div class="col-sm-6 wow col-sm-offset-3 zoomIn">
+                {% else %}
+            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} fadeInRight {% endif %}">
+                {% endif %}
+            {% else %}
+            <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
+            {% endif %}
+              <div class="team-member">
+                  <img src="{{ interests.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+                  <h4>
+                  {% if interests.url %}
+                  <a href="{{ interests.url }}" target="_blank"><span class="navy">{{ interests.name }}</span></a>
+                  {% elsif interests.repo %}
+                  <a href="https://github.com/{{ interests.gh_user }}/{{ interests.repo }}" target="_blank"><span class="navy">{{ interests.name }}</span></a>
+                  {% else %}
+                  <span class="navy">{{ interests.name }}</span>
+                  {% endif %}
+                  </h4>
+                  <p><span data-i18n="interests.{{ interests.i18n }}">{{ interests.desc }}</span></p>
+                  {% if interests.repo %}
+                  <div user="{{ interests.gh_user }}" repo="{{ interests.repo }}" class="ghbtn">
+                      <a target="_blank" style="width: 65px;" href="https://github.com/{{ interests.gh_user }}/{{ interests.repo }}/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
+                      <a target="_blank" style="width: 65px;" href="https://github.com/{{ interests.gh_user }}/{{ interests.repo }}/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
+                      <div style="height: 10px;"></div>
+                  </div>
+                  {% endif %}
+              </div>
+          </div>
+      {% endfor %}
+    </div>
+</div>
+<br>

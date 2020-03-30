@@ -1,0 +1,17 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
+- name: Machine Learning in CyberSecurity
+  i18n: ml
+  img: /static/assets/img/landing/ml.png
+  desc: Practically, everything that implements machine learning in CyberSecurity. From spam detection to automatic penetration testing.
+
+- name: Machine Learning Security & Privacy
+  i18n: mlsec
+  img: /static/assets/img/landing/mlsec.png
+  desc: I am working on adversarial examples and approaches to privacy-preserving machine learning.
+
+- name: Mobile Security
+  i18n: mobsec
+  img: /static/assets/img/landing/mob_sec.png
+  desc: Mainly I am interested in Android OS Security.

@@ -1,0 +1,6 @@
+# skills section data
+
+label: Ability
+id : cs
+aspects: Cybersecurity, Penetration Testing, Python, Linux, Forensics, Kotlin, Active Directory, Java, Malware Analysis, Malware Detection, Machine Learning, Deep Learning
+percentage: 95, 85, 90, 98, 75, 70, 75, 65, 70, 85, 90, 95

@@ -1,0 +1,44 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name:
+    detail: Ministry of Tourism, Eastern Macedonia & Thrace Tourism Directorate
+    i18n: turism
+  desc:
+    detail: Systems, Network & Database Administration, IT consulting
+    i18n: turism_desc
+  date:
+    detail: February 2019 - February 2020
+    i18n: turism_date
+  job:
+    detail: Systems Administrator
+    i18n: turism_job
+  icon: fa-plus-square
+
+- name:
+    detail: Greek Army
+    i18n: army
+  desc:
+    detail: Systems & Network Administration, Active Directory Engineering, IT Support
+    i18n: army_desc
+  date:
+    detail: December 2017 - August 2018
+    i18n: army_date
+  job:
+    detail: Systems Analyst / Programmer
+    i18n: army_job
+  icon: fa-plus-square
+
+- name:
+    detail: Ministry of Culture, Ephorate of Antiquities of Rodopi
+    i18n: culture
+  desc:
+    detail: Database Administration, IT Support
+    i18n: culture_desc
+  date:
+    detail: July 2016 - August 2016
+    i18n: culture_date
+  job:
+    detail: IT Technician (Intern)
+    i18n: culture_job
+  icon: fa-plus-square
+

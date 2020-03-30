@@ -1,0 +1,29 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+- name:
+    detail: University of the Aegean
+    i18n: aegean
+  desc:
+    detail: "I hold a MSc in Information & Communication Systems Security from the Department of Information & Communication Systems Engineering of the University of the Aegean, Samos, Greece. Degree&#58; 9.04 (Honors)"
+    i18n: aegean_desc
+  date:
+    detail: October 2018 - February 2020
+    i18n: aegean_date
+  job:
+    detail: M.Sc. in Information & Communication Systems Security
+    i18n: ionian_job
+  icon: fa-plus-square
+
+- name:
+    detail: Ionian University
+    i18n: ionian
+  desc:
+    detail: "I hold a BSc in Informatics from the Department of Informatics of the Ionian University, Corfu, Greece. Degree&#58; 7.38"
+    i18n: ionian_desc
+  date:
+    detail: October 2013 - September 2017
+    i18n: ionian_date
+  job:
+    detail: B.Sc. in Informatics
+    i18n: ionian_job
+  icon: fa-plus-square
